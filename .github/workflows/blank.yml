@@ -43,6 +43,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: "${{ env.CURRENT_DATE_TIME }}_${{ github.ref_name }}"
-          files: '**/*'
+          files: '**/derper'
         env:
           GITHUB_TOKEN: ${{ secrets.DUBUX }}              
