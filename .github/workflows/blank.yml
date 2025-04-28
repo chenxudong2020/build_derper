@@ -27,7 +27,7 @@ jobs:
       - name: RUN_CI
         id : RUN_CI
         run : |
-            apt-get install git bash -y && \
+            sudo apt-get install git bash -y && \
             git clone https://github.com/tailscale/tailscale && \
             cd tailscale && \
             sed -i '/hi.ServerName != m.hostname/,+2d' cmd/derper/cert.go && \
