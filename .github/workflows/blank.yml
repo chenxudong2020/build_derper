@@ -22,8 +22,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version-file: 'go.mod'
-          check-latest: false
+          go-version: 'stable'
 
       - name: RUN_CI
         id : RUN_CI
